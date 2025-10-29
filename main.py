@@ -7,3 +7,5 @@ person = {
 
 person['nationality'] = 'American'
 
+for key, value in person.items():
+    print(key, ": ", value)
