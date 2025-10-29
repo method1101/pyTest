@@ -5,3 +5,5 @@ person = {
     'phone' : 123454321
 }
 
+person['nationality'] = 'American'
+
