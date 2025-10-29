@@ -7,5 +7,10 @@ person = {
 
 person['nationality'] = 'American'
 
-for key, value in person.items():
-    print(key, ": ", value)
+name = input("Enter name: ")
+if person['first_name'] == name:
+    print('')
+    for key, value in person.items():
+        print(key, ": ", value)
+else:
+    print(f"{name} not found.")
