@@ -1,16 +1,10 @@
-person = {
-    'first_name' : 'bobby',
-    'last_name' : 'mcneal',
-    'age' : 47,
-    'phone' : 123454321
+favorite_languages = {
+	'jen': 'python',
+	'sarah': 'c',
+	'edward': 'ruby',
+	'phil': 'python',
 }
+print("The following languages have been mentioned:")
+for language in set(favorite_languages.values()):
+	print(language.title())
 
-person['nationality'] = 'American'
-
-name = input("Enter name: ")
-if person['first_name'] == name:
-    print('')
-    for key, value in person.items():
-        print(key, ": ", value)
-else:
-    print(f"{name} not found.")
