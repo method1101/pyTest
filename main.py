@@ -1,4 +1,8 @@
-alien_0 = {'color': 'green', 'points': 5}
-print(alien_0)
-del alien_0['points']
-print(alien_0)
+user_0 = {
+	'username': 'efermi',
+	'first': 'enrico',
+	'last': 'fermi',
+}
+for key, value in user_0.items():
+	print("\nKey: " + key)
+	print("Value: " + value)
