@@ -1,8 +1,9 @@
-user_0 = {
-	'username': 'efermi',
-	'first': 'enrico',
-	'last': 'fermi',
+favorite_languages = {
+	'jen': 'python',
+	'sarah': 'c',
+	'edward': 'ruby',
+	'phil': 'python',
 }
-for key, value in user_0.items():
-	print("\nKey: " + key)
-	print("Value: " + value)
+print("The following languages have been mentioned:")
+for language in set(favorite_languages.values()):
+	print(language.title())
