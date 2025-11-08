@@ -1,9 +1,4 @@
-prompt = "\nTell me something, and I will repeat it back to you:"
-prompt += "\nEnter 'quit' to end the program. "
-active = True  # Flag = True
-while active:
-	message = input(prompt)
-	if message == 'quit':
-		active = False
-	else:
-		print(message)
+def greet_user(username):
+    print("Hello, " + username.title() + "!")
+
+greet_user('jesse')
