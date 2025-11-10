@@ -1,4 +1,8 @@
-import carModule as cm
+""" Learning Classes in Python """
 
-cm.make_car(3)
-print(cm.car_name)
+from Dragon import Dragon
+
+my_dragon = Dragon("Sam", 42)
+my_dragon.roar()
+my_dragon.hunt()
+my_dragon.duration()
