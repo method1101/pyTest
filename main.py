@@ -1,3 +1,3 @@
-import carModule
+from carModule import make_car as mc
 
-carModule.make_car(3)
+mc(3)
