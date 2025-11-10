@@ -1,3 +1,4 @@
-from carModule import make_car as mc
+import carModule as cm
 
-mc(3)
+cm.make_car(3)
+print(cm.car_name)
