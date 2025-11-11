@@ -1,8 +1,12 @@
 """ Learning Classes in Python """
 
-from Dragon import Dragon
+class Employee:
+  def __init__(self, fname, lname):
+    self.fname = fname
+    self.lname = lname
+  def greet(self):
+    return f'Hello {self.fname} {self.lname}'
 
-my_dragon = Dragon("Sam", 42)
-my_dragon.roar()
-my_dragon.hunt()
-my_dragon.duration()
+emp1 = Employee('John', 'Smith')
+print(emp1.greet())
+print(Employee.greet(emp1))
