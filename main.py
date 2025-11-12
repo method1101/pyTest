@@ -1,3 +1,3 @@
 with open("./flower") as file:
-    contents = file.read()
-    print(contents)
+    for line in file:
+        print(line)
