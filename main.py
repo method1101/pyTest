@@ -1,13 +1,6 @@
-
-class FileReader:
-    def __init__(self, filename):
-        self.filename = filename
-
-    def read_file(self):
-        with open(self.filename) as file:
-            lines = file.readlines()
-            for line in lines:
-                print(line.rstrip())
+from Includes.Classes.filereader import FileReader
 
 filereader = FileReader("flower")
-filereader.read_file()
+
+content = filereader.read_file()
+
